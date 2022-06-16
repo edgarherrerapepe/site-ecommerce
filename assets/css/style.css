@@ -1,7 +1,13 @@
 :root {
   --lila-color: #C66CD9FF;
   --blue-dark: #3224ADFF;
-  --yellow: #ffc401
+  --yellow: #ffc401;
+  --white1: #FDF2FF;
+  --white: #FFFFFF;
+  --morado: #BC7DC3;
+  --plomo: #9F9F9F;
+  --oscuro: #343434;
+
 }
 body {
   margin: 0 !important;
@@ -131,4 +137,138 @@ nav {
   color: white;
   text-decoration: none;
   padding: 1rem;
+}
+/*------------------------------------- Parte: Fabian Miranda---------------------*/
+
+.container-body-ventas{
+  background: var(--white1);
+}
+.container-body-ventas-in{
+  display: grid;
+  grid-template-columns: auto repeat(1, 50%);
+}
+.container-body-ventas-inner{
+  display: grid;
+  grid-template-columns: auto repeat(2, 33%);
+  grid-template-rows: 450px;
+}
+
+.item-image{
+  height: 450px;
+  position: absolute;
+}
+
+.item-body {
+  height: 300px;
+  width: 200px;
+  background: var(--white);
+  text-decoration: none;
+  margin-left: 6rem;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.item-body-text:hover {
+  width: 70px;
+  padding: 1px 3px;
+  box-shadow: var(--morado) 0px 10px;
+}
+
+.item-body2 {
+  width: 350px;
+  text-decoration: none;
+  padding: 1rem;
+}
+.item-body3 {
+  height: 28px;
+  text-decoration: none;
+}
+.item-body > h2 {
+  color: var(--oscuro);
+  font-weight: 530;
+  font-size: 2rem;
+  margin: 1.5rem 0 !important;
+}
+.item-body > h3 {
+  color: var(--plomo) ;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem 0 !important;
+
+}
+.item-body2 > h3{
+  color: var(--plomo);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem 0 !important;
+}
+.item-body3 > h3{
+  color: var(--oscuro);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 1rem 0 !important;
+}
+.derecha {
+  display: grid;
+  justify-content: right;
+}
+.btn-morado {
+  color: var(--white);
+  background-color: var(--lila-color) !important;
+}
+.descuento {
+  color: var(--plomo);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem 0 !important;
+}
+.titulo {
+  width: 450px;
+}
+.titulo > h1 {
+  display: grid;
+  justify-content: center;
+  color: var(--oscuro);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 1rem 0 !important;
+}
+
+.titulo1 > h1 {
+  display: grid;
+  position: relative;
+  justify-content: right;
+  left: -100px;
+  color: var(--oscuro) ;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem 0 !important;
+}
+.count-producto {
+  height: 70px;
+  width: 70px;
+  background-color: var(--lila-color);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 75px;
+  top: 16px;
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+.progreso-bar {
+  border: 0.2px solid var(--lila-color);
+  border-radius: 5px;
+  margin: 1rem 0 !important;
+}
+.progreso-bar > div {
+  color: var(--white);
+  background: var(--lila-color);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 13px;
+  border-radius: 5px;
 }
