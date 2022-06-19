@@ -25,6 +25,14 @@ body {
   color: white;
   background-color: var(--yellow) !important;
 }
+.btn-shop{
+  color: var(--lila-color);
+  border-color:2px solid var(--lila-color);
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: transparent;
+}
 .text-align-right {
   text-align: right;
 }
@@ -399,4 +407,137 @@ nav {
 
 p {
   color: var(--plomo);
+}
+
+/*body context*/
+.container-body{
+  background: #f6e9f6;
+  height: 100vh;
+}
+.row > section{
+  margin: 0px 5%;
+  display: grid;
+  width: 90%;
+
+  align-items: center;
+
+}
+.container-title-body{
+  display: grid;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  place-content: center center;
+}
+
+.container-title-body > h3{
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container-title-body > h2{
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container-items-body{
+  display: grid;
+  grid-template-columns: 500px auto;
+  gap: 30px;
+}
+.container-perspiciatis-item{
+  background-color: white;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+}
+.container-perspiciatis-item > img{
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  align-self: flex-end ;
+  margin-left: 12rem;
+}
+.perspiciatis-item{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.perspiciatis-item > h5{
+  color:   #c0c0c2;
+  font-size: 13px;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+}
+.perspiciatis-item > h2{
+  margin-bottom: 10px;
+}
+.container-items-romo{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.container-item-romo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  overflow: hidden;
+}
+.item-content{
+  background: #ffffff;
+  border-radius: 7px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.item-content-text{
+  position: absolute;
+}
+.item-content-text > h2, h5 {
+  width: 50%;
+  margin-left: 35px;
+  margin-bottom: 10px;
+ }
+.item-content-text  > h5 {
+  margin-top: 0px;
+}
+.item-content > img{
+  height: 270px;
+  width:220px;
+  display: grid;
+  position: absolute;
+  margin-left: 140px;
+}
+.container-inventore-item{
+  background: #ffffff;
+  border-radius: 7px;
+  display: grid;
+  overflow: hidden;
+  position: relative;
+  align-self: flex-end;
+
+}
+.context-inventore{
+  margin-left: 35px;
+  margin-bottom: 30px;
+}
+.context-inventore > h2{
+  margin-bottom: 10px;
+}
+.context-inventore > h5{
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 100%;
+  color:   #c0c0c2;
+}
+.container-inventore-item > img{
+  width: 350px;
+  height: 180px;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: -20px;
+}
+.btn-shop {
+  border: 1px solid var(--lila-color);
 }
