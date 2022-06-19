@@ -272,3 +272,59 @@ nav {
   padding: 8px 13px;
   border-radius: 5px;
 }
+
+/*###############Estilos Seccion 02################*/
+ 
+/*Marco Superior*/
+.s-02-information {
+  background: var(--white1);
+  height: 25vh;
+}
+
+.s-02-i-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin-left: 5%;
+}
+
+.s-02-i-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: baseline;
+  margin-top: 7%;
+}
+
+.s-02-i-i-img {
+  margin-left: 40%;
+  color: var(--lila-color);
+  font-size: 2em;
+}
+
+/*Marco Inferior*/
+
+.s-02-products {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.s-02-p-details {
+  height: 25%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.s-02-p-commodity {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 57%;
+  margin-top: 5%;
+}
+
+.s-02-p-c-img {
+  text-align: center;
+}
+
+p {
+  color: var(--plomo);
+}
