@@ -7,7 +7,6 @@
   --morado: #BC7DC3;
   --plomo: #9F9F9F;
   --oscuro: #343434;
-
 }
 body {
   margin: 0 !important;
@@ -138,6 +137,80 @@ nav {
   text-decoration: none;
   padding: 1rem;
 }
+.container-content{
+  display:flex;
+  justify-content: center;
+}
+.container-section{
+  display: block;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90%;
+}
+.container-section-text{
+  margin-left: 15px;
+  display: block;
+  position: relative;
+}
+.container-section-text > h5{
+  text-transform: uppercase;
+}
+.container-section-text > h2{
+  margin-top: 0px;
+}
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-item{
+  background-color: white;
+  border-radius: 5px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+.container-text{
+  display: grid;
+  margin-left: 30px;
+  position: relative;
+}
+.container-text > h2{
+  margin-bottom: 0px;
+}
+.container-text > h5{
+  margin-top: 0px;
+  color: rgb(66, 64, 64);
+}
+.container-item > img{
+  width: 450px;
+  height: 220px;
+}
+.container-buton{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center space-around;
+  margin: 0px auto;
+  padding: 10px 10px;
+  width: 10%;
+
+}
+.btn-pass{
+  display: flex;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--lila-color);
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--lila-color);
+  /* place-content: center center; */
+  align-items: center;
+  justify-content: center;
+}
+>>>>>>> lab
 /*------------------------------------- Parte: Fabian Miranda---------------------*/
 
 .container-body-ventas{
