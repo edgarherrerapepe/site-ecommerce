@@ -39,6 +39,12 @@ body {
 .position-relative {
   position: relative !important;
 }
+.card-shadows {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 50px;
+}
+.p-1 {
+  padding: 1rem;
+}
 
 .container-header {
   background: var(--lila-color);
@@ -217,6 +223,14 @@ nav {
   /* place-content: center center; */
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+.btn-pass:hover {
+  color: white;
+  background-color: var(--lila-color);
+  transition: all 300ms ease-in;
 }
 /*------------------------------------- Parte: Fabian Miranda---------------------*/
 
@@ -383,7 +397,7 @@ nav {
 
 /*Marco Inferior*/
 
-.s-02-products {
+.s-02-margin-body {
   margin-left: 5%;
   width: 90%;
 }
@@ -540,4 +554,25 @@ p {
 }
 .btn-shop {
   border: 1px solid var(--lila-color);
+}
+/*Edgar*/
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+.card-product {
+  display: grid;
+  grid-template-rows: 150px auto;
+  border-radius: 5px;
+}
+.card-product > img {
+  height: 150px;
+  margin: 0 auto;
+}
+.container-products-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
 }
